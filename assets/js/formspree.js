@@ -18,7 +18,7 @@
 
      }
 })*/
-(function () {
+(function sending() {
     $(document).ready(function () {
       return $('#contact-form').submit(function (e) {
         let email, message, name;
