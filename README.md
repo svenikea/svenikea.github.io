@@ -1,2 +1,2 @@
-# First porfolio
+# First CV/Resume
 ## Developing stage
