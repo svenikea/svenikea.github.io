@@ -4,6 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -31,8 +32,12 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /*	font-family: 'Source Sans Pro', sans-serif;*/
+ /* --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;*/
+}
+html, body, div, h1,h2 ,h3 ,h4, h5, h6, p, a, img {
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 *,
@@ -42,14 +47,17 @@
 }
 
 html {
-  font-family: sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
+body,a,p,h1,li,ul,html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 @-ms-viewport {
   width: device-width;
 }
@@ -60,13 +68,16 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+/*  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
+/*font-family: 'Source Sans Pro', sans-serif;*/
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: left;
   background-image: url(../image/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 [tabindex="-1"]:focus {
@@ -96,14 +107,6 @@ abbr[data-original-title] {
   text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-}
-.mybio{
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 50px;
-	margin-right: auto;
-	margin-left: auto;
-	text-align: left;
 }
 address {
   margin-bottom: 1rem;
@@ -215,6 +218,8 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  width: 50%;
+  height: 50%;
 }
 
 svg {
@@ -4903,10 +4908,6 @@ input[type="button"].btn-block {
   padding-left: 0;
   border-radius: 0;
 }
-.information {
-	padding: 10rem 5rem;
-	background-color: wheat;
-}
 .alert {
   position: relative;
   padding: 0.75rem 1.25rem;
@@ -5527,7 +5528,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5640,7 +5641,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9038,5 +9039,56 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+.information1 {
+	padding: 10rem 2rem;
+	background-color: #fff;
+	padding-bottom:3rem ;
+}
+.information2 {
+	padding: 10rem 5rem;
+}
+.myskill{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: #ffffff;
+
+}
+.mybio{
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+.mypicture{
+	width: 100%;
+	text-align: left;
+}
+.detailskill{
+		color: #ffffff;
+		padding-right: 10rem;
+}	
+.project{
+background-color: #fff;
+padding: 15rem 1rem;
+border-radius: 0;
+padding-top: 6rem;
+padding-left: auto;
+padding-right: auto;
+
+}
+div.head2{
+	text-align: center;
+	display: block;
+	padding-bottom: 2rem;
+}
+div.projectlist{
+	text-align: left;
 }
 /*# sourceMappingURL=bootstrap.css.map */
