@@ -16,6 +16,7 @@ body{
     background-attachment: fixed;
 }
 a {
+	color: white;
     text-decoration: none;
 }
 /* DISCOVER button location under the first box */
@@ -69,6 +70,7 @@ a {
 }
 .btn-downloads:hover {
 	color: white;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 .gap {
 	margin: 0rem 0.4rem;
@@ -187,4 +189,17 @@ ul > h3 {
 	background-image: url("../image/overlay2.png"), url("../image/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
 	background-size: auto, cover, cover;
 	color: white;
+	text-align: center; 
 }
+.icon-gap {
+	padding-top: 0rem;
+	padding-bottom: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+.icon-gap:hover {
+	color: rgba(51, 51, 51, 0.5);
+	transition: all 0.5s ease;
+}
+
+
