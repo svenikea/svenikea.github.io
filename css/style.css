@@ -1,49 +1,133 @@
-html {
-	font-family: sans-serif;
-	line-height: 1.15;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
-	-ms-overflow-style: scrollbar;
-	-webkit-tap-highlight-color: rgb(0, 0, 0, 0);
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
 }
-body {
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-size: 1rem;
-	font-weight:  400;
-	line-height: 1.5;
-	color: #212529;
-	text-align: left;
-	background-image: url("../image/background.jpg");
-	margin: 0px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container {
-	width: 100%;
-	margin: 0;
-	text-align: center;
+@-ms-viewport {
+    width: device-width;
+  }
+body{
+    background-image: url('../image/background.jpg');
+    background-attachment: fixed;
+}
+a {
+    text-decoration: none;
+}
+/* DISCOVER button location under the first box */
+.button {
+    margin: 50px 0;
+}
+/* default button for all */
+.btn{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+}
+.btn-discover {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+.btn-discover:hover{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.125);
+}
+header {
+    padding: 230px;
+    min-width: 576px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.header1 {
+    padding: 10rem 2rem;
+    padding-right: 15px;
+    padding-left: 12rem;
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    /*padding-bottom: 4rem;*/
+    background-color: #fff;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex; /* display the element on a vertical line */
+    -ms-flex-wrap: wrap; /* wrap around the box corresponding to the dimension of the content*/
+    flex: wrap;/* wrap around the box corresponding to the dimension of the content*/
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0; /* the inital length of the first flex item */
+    -ms-flex-positive: 1;
+    flex-grow: 1; /* specifiy how much item will grow to the rest of the flexible item inside the same container*/
+    max-width: 100%;
+}
+.mybio {
+    margin-top: -40px;
+    margin-bottom: 40px;
+    padding-left: 12px;
+    padding-right: 15rem;
+    width: 100%;
+}
+.my-picture {
+    text-align: center;
+    width: 100%;
+}
+div.major{
+    margin: 0;
+}
+div.major:after {
+    background: rgba(144, 144, 144, 0.5);
+    content: '';
+    display: inline-block;
+    height: 2.5px;
+    margin: 1.5em 0em;
+    width: 6em;
+}
+.container-1 {
+    padding: 10rem 5rem;
+    background: rgba(51, 51, 51, 0.5);
+    color: white;
+}
+.skill-icon {
+    width: 100%;
+    margin-top: -40px;
+    padding-right: 15px;
+    padding-left: 12px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+div > i {
+    margin: 35px 0;
+}
+.img-fluid {
+    margin-top: -60px;
+    margin-left: -110px;
 
 }
-.jumbotron {
-	background-color: #e9ecef;
-	border-radius: 0;
-	background-image: url("../image/gearboxes.png");
-
+p.spacing {
+    margin-bottom: 50px;
 }
-@media (min-width: 576px){
-	.jumbotron {
-		padding: 15rem 3rem;
-	}
+.detailskill {
+    color: white;
+    margin-right: 150px;
 }
-#head {
-	color: white;
-}
-.jumbotron-fluid {
-	width: 100%;
-
-}
-.information {
-	padding: 10rem 5rem;
-	background-color: white;
-	column-count: 2;
-}
-
-
