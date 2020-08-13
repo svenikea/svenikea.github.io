@@ -5,25 +5,62 @@
 }
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
-@-ms-viewport {
-    width: device-width;
-  }
-body{
-    background-image: url('../image/background.jpg');
+html, body { 
+    overflow-x: hidden; 
+    background-image: url("../image/background.jpg");
     background-attachment: fixed;
 }
 a {
-	color: white;
+
+    background-color:transparent;
+}
+a:hover {
+    background-color: transparent;
     text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 1.6s ease;
 }
-/* DISCOVER button location under the first box */
-.button {
-    margin: 50px 0;
+.jumbotron {
+    margin: 0 0;
 }
-/* default button for all */
+.jumbotron-header {
+    background-attachment: fixed, fixed, fixed;
+	background-image: url("../image/overlay2.png"), url("../image/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+	background-size: auto, cover, cover;
+    color: white;
+    text-align: center;
+    padding: 270px;
+}
+.jumbotron-skill {
+    color: white;
+    background: transparent;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+.jumbotron-discover {
+    background-color: #fff;;
+}
+.jumbotron-project {
+    background-color: white;
+    text-align: center;
+}
+.jumbotron-contact {
+    background: transparent;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    text-align: center;
+}
+.jumbotron-social {
+    background-attachment: fixed, fixed, fixed;
+    background-image: url("../image/overlay2.png"), url("../image/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+    background-size: auto, cover, cover;
+    color: white;
+    text-align: center;
+}
+.skill-list {
+    text-align: center;
+    padding-right: 12%;
+}
 .btn{
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -40,7 +77,6 @@ a {
     line-height: 1.5;
     border-radius: 0.25rem;
     transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  
 }
 .btn-discover {
     color: white;
@@ -48,165 +84,51 @@ a {
     border-color: white;
 }
 .btn-discover:hover{
-    color: #fff;
+    color: white;
     background-color: rgba(255, 255, 255, 0.125);
 }
+
+.btn-project {
+    border-color: #666 ;
+}
 .btn-project:hover {
-	color: #fff;
-	background-color: grey;
+    color: #fff;
+    background-color: gray;
 }
 .btn-cv {
-	color: black;
-	background-color: white;
+    color: black;
+    background-color: white;
 }
 .btn-cv:hover {
-	color: white;
-	background-color: transparent;
-
+    color: white;
+    background-color: transparent;
 }
 .btn-downloads {
-	color: white;
-	background-color: transparent;
+    color: white;
+    background-color: transparent;
 }
 .btn-downloads:hover {
-	color: white;
-	background-color: rgba(255, 255, 255, 0.1);
-}
-.gap {
-	margin: 0rem 0.4rem;
-}
-header {
-    padding: 290px;
-    min-width: 576px;
-    	background-attachment: fixed, fixed, fixed;
-	background-image: url("../image/overlay2.png"), url("../image/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
-	background-size: auto, cover, cover;
     color: white;
-    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
 }
-.header1 {
-    padding: 10rem 2rem;
-    padding-right: 15px;
-    padding-left: 9rem;
-    padding-top: 9rem;
-    padding-bottom: 5rem;
-    /*padding-bottom: 4rem;*/
-    background-color: #fff;
-
-}
-.row {
-    display: -ms-flexbox;
-    display: flex; /* display the element on a vertical line */
-    -ms-flex-wrap: wrap; /* wrap around the box corresponding to the dimension of the content*/
-    flex: wrap;/* wrap around the box corresponding to the dimension of the content*/
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.col {
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0; /* the inital length of the first flex item */
-    -ms-flex-positive: 1;
-    flex-grow: 1; /* specifiy how much item will grow to the rest of the flexible item inside the same container*/
-    max-width: 100%;
-}
-.mybio {
-    margin-top: -40px;
-    margin-bottom: 40px;
-    padding-left: 12px;
-    padding-right: 15rem;
-
-    width: 100%;
-}
-div.major{
+div.major {
     margin: 0;
-
 }
-div.major:after {
+div.major::after {
+    content: "";
     background: rgba(144, 144, 144, 0.5);
-    content: '';
     display: inline-block;
     height: 2.5px;
     margin: 1.5em 0em;
     width: 6em;
 }
-.container-1 {
-    padding: 10rem 5rem;
-    padding-bottom: 5rem;
-    background: rgba(51, 51, 51, 0.5);
-    color: white;
-}
-.skill-icon {
-    width: 100%;
-    margin-top: -40px;
-    padding-right: 15px;
-    padding-left: 12px;
-    margin-bottom: 100px;
-    text-align: center;
-}
-div > i {
-    margin: 35px 0;
-}
-.img-fluid {
-    margin-top: -60px;
-    margin-left: -90px;
-    position: absolute;
-
-}
-p.bio-bottom {
-	margin-right: -120px;
-}
-p.spacing {
-    margin-bottom: 50px;
-}
-.detailskill {
-    color: white;
-    margin-right: 150px;
-}
-h2 {
-	font-size: 40px;
-}
-.container-2 {
-	text-align: center;
-	padding: 0 7rem;
-	padding-top: 4rem;
-	padding-bottom: 3rem;
-	background-color: #fff;
-}
-ul > p {
-	padding-bottom: 2rem;
-}
-ul > h3 {
-	padding: 2rem 0rem;
-}
-.contact {
-	background-color: rgba(51, 51, 51, 0.5);
-	padding: 6rem 0rem;
-	text-align: center;
-	color: white;
-	}
-.contact-info {
-	padding: 5rem 0rem;
-	background-attachment: fixed, fixed, fixed;
-	background-image: url("../image/overlay2.png"), url("../image/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
-	background-size: auto, cover, cover;
-	color: white;
-	text-align: center; 
+.gap {
+    margin: 0 1.5%;
 }
 .icon-gap {
-	padding-top: 0rem;
-	padding-bottom: 2rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-.icon-gap:hover {
-	color: rgba(51, 51, 51, 0.5);
-	transition: all 0.5s ease;
-}
-.slide-up {
-	margin-right: 102rem;
-	position: absolute;
-	bottom: 0;
-}
-.slide {
-	margin-left: 21rem;
+    color: white;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
