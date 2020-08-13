@@ -19,4 +19,10 @@ $(document).ready(function () {
 			});
 		} // End if
 	});
+	$("ul.fade").css("display", "none");
+	$("ul.fade").fadeIn(2500);
+
+	$("div.slide-up").animate({"top": "-=40%"}, 2000);
+
 });
+
