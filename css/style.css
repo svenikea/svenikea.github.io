@@ -50,6 +50,7 @@ a:hover {
     color: white;
     text-align: center;
     margin: 0;
+    position: absolute;
 }
 .jumbotron-social {
     background-attachment: fixed, fixed, fixed;
