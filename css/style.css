@@ -30,7 +30,7 @@ a:hover {
 	background-size: auto, cover, cover;
     color: white;
     text-align: center;
-    padding: 270px;
+    /*padding: 270px;*/
 }
 .jumbotron-skill {
     color: white;
