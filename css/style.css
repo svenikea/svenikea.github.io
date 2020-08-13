@@ -76,7 +76,7 @@ a {
 	margin: 0rem 0.4rem;
 }
 header {
-    padding: 230px;
+    padding: 290px;
     min-width: 576px;
     	background-attachment: fixed, fixed, fixed;
 	background-image: url("../image/overlay2.png"), url("../image/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
@@ -203,6 +203,10 @@ ul > h3 {
 	transition: all 0.5s ease;
 }
 .slide-up {
-	position:absolute;
+	margin-right: 102rem;
+	position: absolute;
 	bottom: 0;
+}
+.slide {
+	margin-left: 21rem;
 }
