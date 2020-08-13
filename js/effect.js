@@ -21,8 +21,7 @@ $(document).ready(function () {
 	});
 	$("ul.fade").css("display", "none");
 	$("ul.fade").fadeIn(2500);
-
-	$("div.slide-up").animate({"top": "-=40%"}, 2000);
+	$("div.slide-up").animate({"top": "-=30%"}, 2000);
 
 });
 
