@@ -19,9 +19,7 @@ $(document).ready(function () {
 			});
 		} // End if
 	});
-	$("ul.fade").css("display", "none");
-	$("ul.fade").fadeIn(2500);
-	$("div.slide-up").animate({"top": "-=30%"}, 2000);
-
+	$("div >h1, div > p, div > a").css("display", "none");
+	$("div>, div > p, div > a").fadeIn(2500);
+	$("div.container > a").animate({"top": "-=30%"}, 2000);
 });
-
