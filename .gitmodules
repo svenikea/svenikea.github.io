@@ -1,3 +1,6 @@
 [submodule "rock-paper-scissor"]
 	path = rock-paper-scissor
 	url = https://github.com/kynguyen98/rock-paper-scissor
+[submodule "calculator"]
+	path = calculator
+	url = https://github.com/kynguyen98/calculator
