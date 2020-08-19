@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
 * {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 20px;
 }
 *{
     margin: 0 0;
@@ -59,10 +58,10 @@ a:hover {
     color: white;
     text-align: center;
 }
-.skill-list {
+/*.skill-list {
     text-align: center;
     padding-right: 12%;
-}
+}*/
 .btn{
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -148,9 +147,9 @@ div.major::after {
 
 .bg-dark {
     background: transparent !important;
-    transition: 0.8s ease;
+    transition: all 0.5s ease;
 }
 .bg-dark.scrolling {
-    transition: 0.8s ease;
+    transition: all 0.5s ease;
     background: #343A40 !important;
 }

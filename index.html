@@ -6,19 +6,63 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ky Nguyen</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scrolling">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#discover">Discover<span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#skill">Skills</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#project">Projects</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#more" tabindex="-1" aria-disabled="true">Resume/CV</a>
+			  </li>
+		  </ul>
+		</div>
+	  </nav>
+	<!--	
+		<nav id="nav" class="navbar navbar-expand-lg navbar-l bg-dark fixed-top scrolling">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+		<div class="container">
+		<div class="collapse navbar-collapse" id="navbarNav">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#discover">Discover<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#skill">Skills</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#project">Projects</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#more" tabindex="-1" aria-disabled="true">Resume/CV</a>
+			</li>
+		  </ul>
+		</div>
+	  </nav>
+	-->
 	<section id="header">
 	<div class="jumbotron jumbotron-fluid jumbotron-header">
-		<div class="container">
-			<h1 id="fade">Hi,</h1>
-			<p id="fade" >I'm John, I'm a Embedded System engineer based in San Francisco,
-				CA</p>
-				<p id="fade" >I like solving problems and making ideas come to life</p>
-					<a id="fade" href="#discover" class="btn btn-discover">DISCOVER</a>
+		<div id="fade" class="container">
+			<h1>Hello,</h1>
+			<p>I'm Ky </p>
+				<p>I like solving problems and making ideas come to life</p>
+
+</div>
 </div>
 	</div>
 </section>
@@ -29,18 +73,16 @@
 			<div class="col">
 				<div class="major">
 					<h2>
-						Lorem ipsum dolor adipiscing
-								amet dolor consequat
+						My personal bio
 					</h2>
 				</div>
 				<p>
-					Adipiscing a commodo ante nunc accumsan et
-						interdum mi ante
-						adipiscing. A nunc lobortis non nisl amet vis sed
-						volutpat
-						aclacus nascetur ac non. Lorem curae et ante amet sapien
-						sed
-						tempus adipiscing id accumsan.
+					I'm an ex Embedded System Engineer, 
+					after 4 years of studying Embedded System, 
+					I have decided to switch my hobby to be a Software Developer. 
+					I'm a quick learner, self-motivated developer, 
+					I'm eager to learn new skill, hard-working, experienced with GNU/Linux, 
+					passionate about computer science as well as web development.
 				</p>
 			</div>
 			<div class="col">
@@ -133,43 +175,46 @@
 </section>
 <section id="project">
 	<div class="jumbotron jumbotron-fluid jumbotron-project">
+		<div class="container">
 		<div class="major">
-			<h6>Adipiscing amet consequat</h6>
+			<h6>Projects</h6>
 		</div>
-		<p class="spacing">Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+		<p class="spacing">Here is my personal project that I'm been working on.</p>
 		<div class="row">
 			<div class="col">
 				<ul>
-					<img class="img-fluid" src="image/project1.gif" alt="Rock Paper Scissor">
+					<div class="over-flow">
+					<a target="_blank" href="https://kynguyen98.github.io/rock-paper-scissor/"><img class="img-fluid img-hover" src="image/project1.gif" alt="Rock Paper Scissor"></a>
+				</div>
 					<h3>Rock Paper Scissor</h3>
-					<p>Rock Paper Scissor project that count user and pc choices, display the score
-						 print out message like you win or you lost according to player and pc choices
+					<p>Rock Paper Scissor count user and pc choices, display the score, print out message 
 					</p>
-					<a target="_blank"href="https://kynguyen98.github.io/rock-paper-scissor/" class="btn btn-project">More</a>
+					<!--<a target="_blank" href="https://kynguyen98.github.io/rock-paper-scissor/" class="btn btn-project">More</a>-->
 				</ul>
 				</div>
 				<div class="col">
 					<ul>
-						<img class="img-fluid" src="image/pic03.jpg" alt="project2">
-						<h3>Magna feugiat lorem</h3>
-						<p>Adipiscing a commodo ante nunc magna lorem et interdum mi
-							ante nunc lobortis non amet vis sed volutpat et
-							nascetur.</p>
-						<a href="#" class="btn btn-project">More</a>
-					</ul>
+						<div class="over-flow">
+							<a target="_blank" href="https://kynguyen98.github.io/calculator/"><img class="img-fluid img-hover" src="image/project2.gif" alt="project2"></a>
+				
+					</div>
+						<h3>Calculator</h3>
+						<p>Basic Calculator that has addision, division, substraction, multiplication and mod</p>
+							</ul>
 				</div>
 				<div class="col">
 					<ul>
-						<img class="img-fluid" src="image/pic04.jpg" alt="project3">
-						<h3>Magna feugiat lorem</h3>
-						<p>Adipiscing a commodo ante nunc magna lorem et interdum mi
-							ante nunc lobortis non amet vis sed volutpat et
-							nascetur.</p>
-						<a href="#" class="btn btn-project">More</a>
+						<div class="over-flow">
+							<a	target="_blank" href="https://github.com/kynguyen98/ECE455-Final-Project"><img class="img-fluid img-hover" src="image/project3.png" alt="project3"></a>
+
+					</div>
+						<h3>Image segmentaion</h3>
+						<p>Image semantic segmentation using OpenCV, Python and pre-trained model from Caffe</p>
 					</ul>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </section>
 <section id="more">
@@ -207,14 +252,12 @@
 		</div>
 	</div>
 </section>
-</body>
 
 <script src="https://kit.fontawesome.com/166dcd3547.js" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"
-	integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
-<script src="js/effect.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script  src="js/effect.js"></script>
+</body>
 </html>
