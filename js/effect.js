@@ -1,6 +1,8 @@
 $(document).ready(function () {
+//	$(".jumbotron-header.container").css("display", "none");
+//	$(".jumbotron-header.container").fadeIn(2500);
 	// Add smooth scrolling to all links
-	$("a").on('click', function (event) {
+$("a").on('click', function (event) {
 		// Make sure this has has a value before overriding default behavior
 		if (this.hash !== "") {
 			// Prevent default anchor click behavior
@@ -19,7 +21,13 @@ $(document).ready(function () {
 			});
 		} // End if
 	});
-	$("div >h1, div > p, div > a").css("display", "none");
-	$("div>, div > p, div > a").fadeIn(2500);
-	$("div.container > a").animate({"top": "-=30%"}, 2000);
 });
+$("div#fade").css("display", "none"); 
+/*
+Slowly display the jumbotron
+*/ 
+$("div#fade").fadeIn(2500);	
+$(window).scroll(function () {
+	$("nav").toggleClass("scrolling", $(this).scrollTop() > 650);
+});
+	
