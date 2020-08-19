@@ -4,7 +4,7 @@
     font-size: 20px;
 }
 *{
-    margin: 0;
+    margin: 0 0;
 }
 html, body { 
     overflow-x: hidden; 
@@ -12,7 +12,8 @@ html, body {
     background-attachment: fixed;
 }
 a {
-
+    color: white;
+    text-decoration: none;
     background-color:transparent;
 }
 a:hover {
@@ -22,15 +23,15 @@ a:hover {
     transition: all 1.6s ease;
 }
 .jumbotron {
-    margin: 0 0;
+    margin: 0 ;
 }
 .jumbotron-header {
     background-attachment: fixed, fixed, fixed;
 	background-image: url("../image/overlay2.png"), url("../image/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
 	background-size: auto, cover, cover;
     color: white;
-    text-align: center;
-    padding: 270px;
+    text-align: left;
+    padding: 17%;
 }
 .jumbotron-skill {
     color: white;
@@ -132,4 +133,24 @@ div.major::after {
     padding-bottom: 2%;
     padding-left: 1%;
     padding-right: 1%;
+}
+.img-hover:hover{
+    opacity: 0.5;
+    transform: scale(1.2);
+    transition: 0.5s ease-out;
+    filter: blur(4px);
+    
+
+}
+.over-flow {
+    overflow: hidden; /*  When hover a picture this will prevent the image from reaching out of it box and hide the overflow part  */
+}
+
+.bg-dark {
+    background: transparent !important;
+    transition: 0.8s ease;
+}
+.bg-dark.scrolling {
+    transition: 0.8s ease;
+    background: #343A40 !important;
 }
