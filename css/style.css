@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;1,300&display=swap');
 * {
     font-family: 'Source Sans Pro', sans-serif;
-}
-*{
-    margin: 0 0;
-}
-html, body { 
-    overflow-x: hidden; 
-    background-image: url("../image/background.jpg");
-    background-attachment: fixed;
+    font-size: 20px;
 }
 a {
     color: white;
     text-decoration: none;
     background-color:transparent;
+}
+body { 
+    background-image: url("../image/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 a:hover {
     background-color: transparent;
@@ -21,47 +19,6 @@ a:hover {
     color: rgba(255, 255, 255, 0.5);
     transition: all 1.6s ease;
 }
-.jumbotron {
-    margin: 0 ;
-}
-.jumbotron-header {
-    background-attachment: fixed, fixed, fixed;
-	background-image: url("../image/overlay2.png"), url("../image/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
-	background-size: auto, cover, cover;
-    color: white;
-    text-align: left;
-    padding: 17%;
-}
-.jumbotron-skill {
-    color: white;
-    background: transparent;
-    background-color: rgba(51, 51, 51, 0.5);
-}
-.jumbotron-discover {
-    background-color: #fff;;
-}
-.jumbotron-project {
-    background-color: white;
-    text-align: center;
-}
-.jumbotron-contact {
-    background: transparent;
-    background-color: rgba(51, 51, 51, 0.5);
-    color: white;
-    text-align: center;
-    margin: 0;
-}
-.jumbotron-social {
-    background-attachment: fixed, fixed, fixed;
-    background-image: url("../image/overlay2.png"), url("../image/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
-    background-size: auto, cover, cover;
-    color: white;
-    text-align: center;
-}
-/*.skill-list {
-    text-align: center;
-    padding-right: 12%;
-}*/
 .btn{
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -79,23 +36,6 @@ a:hover {
     border-radius: 0.25rem;
     transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-.btn-discover {
-    color: white;
-    background-color: transparent;
-    border-color: white;
-}
-.btn-discover:hover{
-    color: white;
-    background-color: rgba(255, 255, 255, 0.125);
-}
-
-.btn-project {
-    border-color: #666 ;
-}
-.btn-project:hover {
-    color: #fff;
-    background-color: gray;
-}
 .btn-cv {
     color: black;
     background-color: white;
@@ -111,6 +51,37 @@ a:hover {
 .btn-downloads:hover {
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
+}
+.jumbotron {
+    margin: 0 0;
+}
+.jumbotron-discover {
+    background-color: #fff;;
+}
+.jumbotron-skill {
+    margin: 0;
+    color: white;
+    background: transparent;
+    background-color: rgba(51, 51, 51, 0.5);
+    background-size: cover;
+}
+.jumbotron-project {
+    text-align: center;
+    margin: 0 0;
+}
+.jumbotron-contact {
+    background: transparent;
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+.jumbotron-social {
+    background-attachment: fixed, fixed, fixed;
+    background-image: url("../image/overlay2.png"), url("../image/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+    background-size: auto, cover, cover;
+    color: white;
+    text-align: center;
 }
 div.major {
     margin: 0;
@@ -138,11 +109,9 @@ div.major::after {
     transform: scale(1.2);
     transition: 0.5s ease-out;
     filter: blur(4px);
-    
-
 }
 .over-flow {
-    overflow: hidden; /*  When hover a picture this will prevent the image from reaching out of it box and hide the overflow part  */
+    overflow: hidden; /*  When hover a picture this will prevent the image from reaching out of it box and hide the overflow part 
 }
 
 .bg-dark {
