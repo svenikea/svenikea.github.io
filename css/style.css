@@ -9,9 +9,17 @@ a {
     background-color:transparent;
 }
 body { 
+    overflow-x: hidden;
     background-image: url("../image/background.jpg");
     background-attachment: fixed;
     background-size: cover;
+}
+/*
+This part right here will remove the space gap on the right of the screen when on mobile
+*/
+.row {
+    padding-right: 0px;
+    margin-right: 0px;
 }
 a:hover {
     background-color: transparent;
@@ -95,7 +103,7 @@ div.major::after {
     width: 6em;
 }
 .gap {
-    margin: 0 1.5%;
+    margin: 1.5% 1.5%;
 }
 .icon-gap {
     color: white;
@@ -117,8 +125,34 @@ div.major::after {
 .bg-dark {
     background: transparent !important;
     transition: all 0.5s ease;
+    color: white;
 }
 .bg-dark.scrolling {
     transition: all 0.5s ease;
     background: #343A40 !important;
+    color: white;
+}
+.row-spacing {
+    margin: 15%;
+}
+div.skill-list > div.row > div.col > i{
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 4px;
+    height: 2em;
+    line-height: 2em;
+    margin: 37%;
+    text-align: center !important;
+    width: 2em;
+    border: solid 2px rgba(144, 144, 144, 0.5);
+}
+div.skill-list > div.row > div.col > i::before {
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    display: inline-block;
+    line-height: inherit;
 }
