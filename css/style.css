@@ -111,7 +111,7 @@ div.major::after {
     filter: blur(4px);
 }
 .over-flow {
-    overflow: hidden; /*  When hover a picture this will prevent the image from reaching out of it box and hide the overflow part 
+    overflow: hidden; /*  When hover a picture this will prevent the image from reaching out of it box and hide the overflow part */
 }
 
 .bg-dark {
