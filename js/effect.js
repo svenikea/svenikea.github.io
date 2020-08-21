@@ -22,12 +22,36 @@ $("a").on('click', function (event) {
 		} // End if
 	});
 });
-$("div#fade").css("display", "none"); 
-/*
-Slowly display the jumbotron
-*/ 
-$("div#fade").fadeIn(2500);	
+
+// scrolling down fade in the navbar scrolling up top make it transparent 
 $(window).scroll(function () {
-	$("nav").toggleClass("scrolling", $(this).scrollTop() > 650);
+	$("nav").toggleClass("scrolling", $(this).scrollTop() > 3);
 });
 	
+
+// Fade the bio image
+/*$(document).ready(function (){
+	$(window).scroll(function (){
+		$("#my-img").fadeIn(2500);
+	})
+
+});
+*/
+// Alternative coding from the internet about fade in bio image 
+$(document).ready(function () {
+	$(window).scroll(function () {
+		$("#my-img").each(function (i){
+			var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+			var bottom_of_window = $(this).scrollTop() + $(window).height();
+			if ( bottom_of_window > bottom_of_element) {
+				$(this).animate({"opacity" : "1"},2000);
+			}
+			else if ( bottom_of_window < bottom_of_element) { 
+				$(this).animate({"opacity" : "1"},2000);
+			}
+			/*
+			* For some reason I have to added a second if statement just for my ext-monitor and my laptop screen to work?
+			*/
+		})
+	})
+});
