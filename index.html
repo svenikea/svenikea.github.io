@@ -8,11 +8,12 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
 	crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 	<div class="overflow-hidden">
 		<div class="overflow-visible">
-    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top scrolling">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -73,7 +74,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xl">
-						<div class="container-fluid">
+						<div id="bio-detail" class="container-fluid">
 						<div class="major">
 							<h2>
 								My personal bio
@@ -91,8 +92,8 @@
 					</div>						
 				</div>
 					<div class="col-xl">
-						<div  class="container-fluid">
-							<img id="my-img" alt="my-picture" class="img-fluid" src="image/pic01.jpg">
+						<div class="container-fluid">
+							<img id="my-img"  alt="my-picture" class="img-fluid" src="image/pic01.jpg">
 						</div>
 	
 					</div>
@@ -100,26 +101,6 @@
 			</div>
 		  </div>
 	  </section>
-
-<!--  <div class="container">
-		<div class="row">
-			<div  class="col style1">
-				<i class="far fa-calendar-check fa-3x"></i>
-			</div>
-			<div class="col style2">
-				<i class="far fa-lightbulb fa-3x"></i>
-			</div>
-		</div>
-		<div class="row row-cols-2 ">
-			<div class="col style3">
-				<i class="fab fa-linux fa-3x"></i>								
-			</div>
-			<div class="col style4">
-				<i class="fas fa-code fa-3x"></i>
-			</div>
-		</div>
-	</div>  -->
-
 	  <section id="skill">
 		<div class="jumbotron jumbotron-fluid jumbotron-skill">
 			<div class="container">
@@ -127,27 +108,25 @@
 					<div class="container-fluid">
 					<div class="col">
 							<div class="row row-cols-2">
-								<div  class="col">
+								<div data-aos="flip-left" data-aos-duration="2000" class="col">
 									<i class="far fa-calendar-check fa-3x style1"></i>
 								</div>
-								<div class="col">
+								<div data-aos="flip-left" data-aos-duration="2000" class="col">
 									<i class="far fa-lightbulb fa-3x style1"></i>
 								</div>
 							</div>
 							<div class="row row-cols-2">
-								<div class="col">
+								<div data-aos="flip-left" data-aos-duration="2000" class="col">
 									<i class="fas fa-users-cog fa-3x style3"></i>								
 								</div>
-
-								<div class="col">
-
+								<div data-aos="flip-left" data-aos-duration="2000" class="col">
 									<i class="fas fa-code fa-3x style4"></i>
 							</div>
 						</div>
 					</div>
 				</div>
 						<div class="col-sm">
-							<div class="container-fluid">
+							<div data-aos="fade-left" data-aos-duration="2000" class="container-fluid">
 							<div class="major">
 								<h2>Skills</h2>
 							</div>
@@ -172,12 +151,12 @@
 	<section id="project">
 		<div class="jumbotron jumbotron-fluid jumbotron-project">
 			<div class="container-fluid">
-				<div class="major">
+				<div class="major" data-aos="fade-right" data-aos-duration="2000" >
 					<h1>Projects</h1>
 				</div>
 				<p class="spacing">Here is my personal project that I'm been working on.</p>
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-					<div class="col-md">
+					<div class="col-md" data-aos="zoom-in" data-aos-duration="2000" >
 						<div class="container-fluid">
 							<div class="over-flow">
 								<a target="_blank"
@@ -194,7 +173,7 @@
 							</div>						
 						</div>
 					</div>
-					<div class="col-md">
+					<div class="col-md" data-aos="zoom-in" data-aos-duration="2000">
 						<div class="container-fluid">
 							<div class="over-flow">
 								<a target="_blank"
@@ -210,7 +189,7 @@
 								</div>
 							</div>
 					</div>
-					<div class="col-md">
+					<div class="col-md" data-aos="zoom-in" data-aos-duration="2000" >
 						<div class="container-fluid">
 							<div class="over-flow">
 								<a target="_blank"
@@ -225,7 +204,7 @@
 						</div>
 					</div>
 					</div>
-					<div class="col-md">
+					<div class="col-md" data-aos="zoom-in" data-aos-duration="2000">
 						<div class="container-fluid">
 							<div class="over-flow">
 								<a target="_blank"
@@ -253,8 +232,8 @@
 					<h2>Want to know more about myself?</h2>
 				</div>
 				<p class="spacing">My Resume.</p>
-				<a href="#" class="btn btn-cv gap">CV/Resume</a>
-				<a href="#" class="btn btn-downloads gap">Download</a>
+				<a href="#" class="btn btn-cv gap" data-aos="flip-up" data-aos-duration="1000">CV/Resume</a>
+				<a href="#" class="btn btn-downloads gap" data-aos="flip-down" data-aos-duration="1000">Download</a>
 			</div>							
 		</div>
 		</div>
@@ -293,6 +272,11 @@
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 		crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
 	<script src="js/effect.js"></script>
+
 </body>
 </html>
