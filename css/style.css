@@ -66,10 +66,7 @@ body {
 
 /* --------------------------------  Navbar effect and style  ------------------------------------*/
 
-a.nav-link:hover {
-    color: red;
-}
-nav:hover {
+#nav:hover {
     background: #343A40 !important;
 }
 .bg-dark {
@@ -77,7 +74,8 @@ nav:hover {
     transition: all 0.5s ease;
     color: white;
 }
-.bg-dark.scrolling {
+/* Didn't apply to nav tag only apply when srolling down */
+.apply-scrolling {
     transition: all 0.5s ease;
     background: #343A40 !important;
 }
@@ -173,6 +171,12 @@ This however will make the whole container of the image dissapear and when scrol
 */
 img#my-img {
     opacity: 0;
+
+}
+#bio-detail {
+    opacity: 0;
+    margin-left: -300px;
+
 }
 
 
