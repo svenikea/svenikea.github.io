@@ -160,6 +160,27 @@ This part right here will remove the space gap on the right of the screen when o
 
 
 
+/* --------------------------------  discover effect and style  ------------------------------------*/
+
+/* Alternative js of first attemp using scroll wiht fade in when reach element
+
+img#my-img {
+    display: none;
+}
+
+This however will make the whole container of the image dissapear and when scrolling down to image its container re-apprear which makes no sense
+
+*/
+img#my-img {
+    opacity: 0;
+}
+
+
+
+/* --------------------------------  End of discover  -----------------------------------------------*/
+
+
+
 /* --------------------------------  Buttons effect and style  ------------------------------------*/
 
 .jumbotron {
