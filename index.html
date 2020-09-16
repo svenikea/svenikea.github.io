@@ -9,6 +9,7 @@
 	crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
 </head>
 <body>
 	
@@ -65,54 +66,67 @@
 						<h2 class="heading">Latest Projects</h1>
 						<h3 class="title">Current project</h3>
 						<img src="#" alt="project here">
-						<p>Created a fully functional REST API using Django,Django REST Framework,Docker and Test Driven <br>
-							Development(TDD). <br>
+						<p>Creating a fully functional REST API using Django,Django REST Framework,<br>
 						Used PostgreSQL as the database of the REST API</p>
 						<p><b> Technology Stack:</b> - Django,Django REST Framework,Docker,TDD,PostgreSQL.</p>
 						<p class="explore"><a href="#" class="btn btn-primary">Head to my project</a></p>
 						<div class="space"></div>
 						<div class="row">
 							<div class="col-md-4">
-								<a href="https://kynguyen98.github.io/rock-paper-scissor/" 
-								target="_blank"><img class="img-fluid img-hover" src="image/project1.gif" alt="project here"></a>
+								<div class="over-flow">
+									<a href="https://kynguyen98.github.io/rock-paper-scissor/" 
+									target="_blank"><img class="img-fluid img-hover" src="image/project1.gif" alt="project here"></a>
+								</div>
 							</div>
 							<div class="col-md">
-								<h3>Django 1</h3>
-								<p>A E-Commerce web application made using Django using which a customer can create an account,
-									search and add products of different categories in their cart,
-									pay for the products and recieve mails/bills of their order using Mailgun.</p>
+								<h2 class="title">Rock Paper Scissor</h2>
+								<p>Rock Paper Scissor count user and pc choices, display the
+									score, print out message</p>
+									<p><a href="https://kynguyen98.github.io/rock-paper-scissor/" 
+										target="_blank" ><i class="fa fa-external-link"></i> View on Github</a></p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-4">
-								<a href="https://kynguyen98.github.io/calculator/" 
-								target="_blank" ><img class="img-fluid img-hover" src="image/project2.gif" alt="project here"></a>
+								<div class="over-flow">
+									<a href="https://kynguyen98.github.io/calculator/" 
+									target="_blank" ><img class="img-fluid img-hover" src="image/project2.gif" alt="project here"></a>
+								</div>
 							</div>
 							<div class="col-md">
-								<h3>Django 1</h3>
-								<p>A E-Commerce web application made using Django using which a customer can create an account,
-									search and add products of different categories in their cart,
-									pay for the products and recieve mails/bills of their order using Mailgun.</p>
+								<h2 class="title">Basic Calculator</h2>
+								<p>Basic Calculator that has addision, division, substraction,
+									multiplication and mod</p>
+									<p><a href="https://kynguyen98.github.io/calculator/" 
+										target="_blank" ><i class="fa fa-external-link"></i> View on Github</a></p>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-4">
-								<a  class="more-link" href="https://github.com/kynguyen98/ECE455-Final-Project" 
-								target="_blank"><img class="img-fluid img-hover" src="image/project3.png" alt="project here">
+								<div class="over-flow">
+									<a class="more-link" href="https://github.com/kynguyen98/ECE455-Final-Project" 
+									target="_blank"><img class="img-fluid img-hover" src="image/project3.png" alt="project here">
+								</div>
 								</div></a>
 							<div class="col-md">
-								<h3>Django 1</h3>
-								<p>A E-Commerce web application made using Django using which a customer can create an account,
-									search and add products of different categories in their cart,
-									pay for the products and recieve mails/bills of their order using Mailgun.</p>
+								<h2 class="title">ECE445 Final Project</h2>
+								<p>Image semantic segmentation using Python OpenCV and pre-trained caffe model to segment object
+									on the street
+								</p>
+									<p><a href="https://github.com/kynguyen98/ECE455-Final-Project" 
+										target="_blank" ><i class="fa fa-external-link"></i> View on Github</a></p>
 							</div>
 						</div>
 						</div>
 			</div> 
 		<div class="row-8">
 					<div class="container-body">
-						<h1>My Github</h1>
+						<h2 class="heading">My Github</h2>
 						<p>My Github contribution graph calander</p>
+						<div class="calendar">
+							<!-- Loading stuff -->
+							Loading the data just for you.
+						</div>
 					</div>
 			</div>
 		</div>
@@ -125,37 +139,43 @@
 			</div>
 			<div class="row-4">
 					<div class="container-body">
-						<h2>Skills</h2>
-						<h3>Languages</h3>
-						<li>Python</li>
-						<li>C</li>
-						<li>Java</li>
-						<h2>Frameworks</h2>
-						<h3>Django</h3>
-						<li>Django REST Framework</li>
-						<h2>Database</h2>
-						<li>MySQL</li>
-						<li>PostgreSQL</li>
+						<h2 class="heading">Skills</h2>
+						<h2 class="title">Languages</h2>
+						<ul>
+							<li>Python</li>
+						</ul>
+						<h2 class="title">Frameworks</h2>
+						<ul>
+							<li>Django</li>
+							<li>Django REST Framework</li>
+						</ul>
+						<h2 class="title">Database</h2>
+						<ul>
+							<li>MySQL</li>
+							<li>PostgreSQL</li>
+						</ul>
 					</div>
 					<div class="container-body">
-						<h2>Education</h2>
-						<h3>Da Nang University of Technology</h3>
+						<h2 class="heading">Education</h2>
+						<h2 class="title fa fa-graduation-cap"> Da Nang University of Technology</h2>
 						<p>Embedded System - Computer Science</p>
 					</div>
 				</div>
 				<div class="row-4">	
 						<div class="container-body">
-							<h2>Languages</h2>
-							<p>English: Professional efficiency</p>
-							<p>Vietnamese: Native Speaker</p>
+							<h2 class="heading">Languages</h2>
+							<p><b>English:</b> Professional efficiency</p>
+							<p><b>Vietnamese:</b> Native Speaker</p>
 						</div>
 				</div>
 			</div>
 		</div>
 	</div>
-			<div class="container-body">
-				<p>Copyright © Ky Nguyen 2020</p>
-			</div>
+	<footer class="footer">
+		<div class="container-body">
+			<p>Copyright © Ky Nguyen 2020</p>
+		</div>
+	</footer>
 	<script src="https://kit.fontawesome.com/166dcd3547.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -171,7 +191,7 @@
 	<script>
 	  AOS.init();
 	</script>
-	<script src="js/effect.js"></script>
-
+	<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+	<script src="js/git_graph.js"></script>
 </body>
 </html>
