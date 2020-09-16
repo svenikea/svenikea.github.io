@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 a {
-<<<<<<< HEAD
     color: white;
     background-color:transparent;
-=======
     text-decoration: none;
     color: #3AAA64;
 }
@@ -38,7 +36,6 @@ h3.title {
     font-size: 1.75rem;
     font-weight: 500;
     text-align: center;
->>>>>>> dev
 }
 a:hover {
     text-decoration: none;
@@ -111,25 +108,14 @@ div.container .row .col-lg-4 .container {
         margin-bottom: 5px;
     }
 }
-<<<<<<< HEAD
-
-
-
-/* --------------------------------  End of discover  -----------------------------------------------*/
-
-
-
-/* --------------------------------  Buttons Jumbotron  ------------------------------------*/
 
 .jumbotron {
     margin: 0 0;
-=======
 div.container{
         -webkit-transition: all 0.6s ease-in-out;
         -moz-transition: all 0.6s ease-in-out;
         -o-transition: all 0.6s ease-in-out;
         transition: all 0.6s ease-in-out;
->>>>>>> dev
 }
 div.col-lg-4 div.row-4 div.container-body a {
     color: #3AAA64;
