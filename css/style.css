@@ -10,50 +10,106 @@ a:hover {
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
-}
-h1 {
     font-weight: 700;
-    font-size: 3rem;
+}
+h1.name {
+    font-size: 38px;
+}
+.btn {
+    font-family: 'Montserrat', sans-serif;
 }
 h2 {
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 h2.heading {
-    font-size: 2rem;
     color: #545e69;
+    font-size: 2rem;
     font-weight: 700;
 }
 h2.title {
     color: #778492;
-    font-size: 1.27rem;
+    font-size: 1rem;
     font-weight: 900;   
 }
 h3.title {
     color: #778492;
     font-size: 1.75rem;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
+}
+p.content {
+    padding-left: 25px;
 }
 a:hover {
     text-decoration: none;
 }
 body { 
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', arial, sans-serif;
     background: #DAE3E7;
     width: 100vw;
+    font-size: 16px;
     overflow-x: hidden;
 }
+
 .name {
     color: #49515a;
     font-size: 38px;
 }
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    max-width: 1140px;
+  }
+}
+
 .container-body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     padding: 15px 15px;
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
 .jumbotron {
     background-color: #f5f5f5;
@@ -71,6 +127,9 @@ body {
     margin-right: 10px;
     -webkit-transition: all 1s ease-in-out;
 }
+.col-md-6.header {
+    padding-top: 20px;
+} 
 .heading {
     margin-top: 0;
     margin-bottom: 30px;
@@ -81,7 +140,7 @@ body {
 }
 div.container .row .col-lg-4 .container {
     -webkit-transition: all 1s ease-in-out;
-    margin: 40px auto;
+    margin: 50px auto;
 }
 @media (max-width: 1200px) {
     div.container .row .col-lg-4 .container {
@@ -92,7 +151,7 @@ div.container .row .col-lg-4 .container {
 @media (max-width: 1169px) {
     div.container .row .col-lg-4 .container {
         -webkit-transition: all 1s ease-in-out;
-        margin: 40px auto;
+        margin: 50px auto;
     }
 }
 @media (max-width: 900px) {
@@ -102,7 +161,7 @@ div.container .row .col-lg-4 .container {
     }
     div.container .row .col-lg-4 .container {
         -webkit-transition: all 1s ease-in-out;
-        text-align: center;
+        text-align: right;
         margin-bottom: 5px;
     }
 }
@@ -135,6 +194,14 @@ div.space {
     transition: 0.5s ease-out;
     filter: blur(4px);
 }
+.img-shadow {
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+}
 div.over-flow {
     overflow: hidden;
 }
@@ -142,4 +209,28 @@ div.over-flow {
     background: #32383e;
     color: #fff;
     text-align: center;
+}
+
+.btn.btn-info {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn.btn-primary {
+    font-weight: bold;
+}
+div.row-4 div.container-body p.title1::before {
+    content : 'English: ';
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #778492;
+}
+div.row-4 div.container-body p.title2::before {
+    content : 'Vietnamese: ';
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #778492;
+}
+p.sumary {
+    text-align: center;
+    color: #778492;
 }
