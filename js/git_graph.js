@@ -1,10 +1,10 @@
 //GitHubCalendar(".calendar", "your-username");
 
 // or enable responsive functionality:
-GitHubCalendar(".calendar", "kynguyen98", { responsive: true });
+GitHubCalendar(".calendar", "svenikea", { responsive: true });
 
 // Use a proxy
-GitHubCalendar(".calendar", "kynguyen98", {
+GitHubCalendar(".calendar", "svenikea", {
    proxy (username) {
      return fetch(`https://github.com/github?user=${username}`)
    }
