@@ -165,6 +165,13 @@ div.container .row .col-lg-4 .container {
         margin-bottom: 5px;
     }
 }
+
+@media (max-width: 800px) {
+    div.col-md h2 {
+        padding-top: 5%;
+    }
+}
+
 div.container{
         -webkit-transition: all 0.6s ease-in-out;
         -moz-transition: all 0.6s ease-in-out;
@@ -188,6 +195,13 @@ div.space {
     margin: 1.5em 0em;
     width: 100%;
 }
+
+.img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .img-hover:hover{
     opacity: 0.5;
     transform: scale(1.2);
